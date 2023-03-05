@@ -1,0 +1,31 @@
+.card .card-header{
+	color: #FFFFFF; 
+	background-color: var(--color-primary);
+}
+/*QCM*/
+.list-group {
+	max-width: 460px;
+	margin: 2rem auto;
+}
+
+.list-group-checkable .list-group-item {
+	cursor: pointer;
+}
+.list-group-item-check {
+	position: absolute;
+}
+
+.list-group-radio .list-group-item {
+	cursor: pointer;
+	border-radius: .5rem;
+}
+.list-group-radio .form-check-input {
+	z-index: 2;
+	margin-top: -.5em;
+}
+
+.list-group-radio .form-check-input:checked + .list-group-item {
+	background-color: var(--bs-body);
+	border-color: var(--color-primary);
+	box-shadow: 0 0 0 2px var(--color-primary);
+}
